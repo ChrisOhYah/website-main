@@ -1,17 +1,11 @@
-import discord
-from discord import app_commands
-from discord.ext import commands
 import os
 import tracemalloc
-from dotenv import load_dotenv
 from flask import Flask, jsonify, request, render_template, send_from_directory
-import threading
 import requests
 import json
 import string
 import random
 tracemalloc.start()
-load_dotenv()
 
 
 # FLASK
