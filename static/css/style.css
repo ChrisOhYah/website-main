@@ -1,0 +1,8 @@
+body {
+    background-color: gray;
+}
+
+.badge badge-default {
+    display: table !important;
+    margin: 0 auto !important;
+}

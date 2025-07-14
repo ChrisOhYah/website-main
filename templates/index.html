@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta property="og:title" content="Chris Portfolio" />
+    <meta property="og:description" content="Hi I am him hahaha" />
+    <meta property="og:url" content="https://chriscode.xyz/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ url_for('static', filename='images/images.png', _external=True) }}" />
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='images/images.png') }}" rel="icon" type="image/png">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-center">
+				Welcome to my portfolio
+			</h3> <span class="badge badge-default" style="display: table; margin: 0 auto;">Welcome, I am Chris, I love coding around as hobby, my main knowledge is CSS, HTML, PYTHON and LUA. I will be showing some projects for you guys. LUA projects will be shown in the future.</span>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="text-center lead">
+						Python projects.
+					</p>
+					<div class="jumbotron card card-block">
+						<h2>
+							API Roblox -&gt; My API -&gt; Discord
+						</h2>
+						<p>
+							This API is a bridge for users to send http requests to my api which it will send a http request to discord webhook. It uses GET request and for now it supports only content (text)
+						</p>
+						<p>
+							you can try it out: https://chriscode.xyz/webhook?id=webhookid&amp;token=webhooktoken&amp;content=hello world
+						</p>
+					</div>
+					<div class="jumbotron card card-block">
+						<h2>
+							Discord bot #1
+						</h2>
+						<p>
+							This discord bot was made for moderators mostly, it has about, kick, ban, dm, ping, change activity of bot and test commands. My favourite one is that the bot was also sending http get requests to a website if it's alive. When the bot had errors, it couldn't send requests, so the website was getting triggered and it would contact me.
+						</p>
+						
+						<p>
+							I DON'T USE THIS PROJECT ANYMORE
+						</p>
+					</div>
+					<div class="jumbotron card card-block">
+						<h2>
+							Discord bot #2
+						</h2>
+						<p>
+							This bot is simple, but this bot had special commands, key system. How it works? When you execute the command it would give you a link to open to see ads, when you completed the tasks, it would get you to a website which it would display the code, after that you could use the /redeem command which you can redeem it. If the key is correct, it will send "Key correct" messages, if not, it will send "Incorrect key".
+						</p>
+						
+						<p>
+							STILL USES THIS PROJECT
+						</p>
+					</div>
+					<div class="jumbotron card card-block">
+						<h2>
+							This website
+						</h2>
+						<p>
+							Yes, this website was made by python flask. But this page is made by HTML and CSS
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  </body>
+</html>
